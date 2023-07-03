@@ -1,5 +1,4 @@
 {
-  "access-token": "secrets.ACCESS_TOKEN",
   "server": "tedcarstensen.social",
   "home-timeline-length": 200,
   "max-followings": 80,
