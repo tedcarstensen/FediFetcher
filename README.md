@@ -60,7 +60,12 @@ Run FediFetcher as a GitHub Action, a cron job, or a container:
    1.  Go to Settings > Secrets and Variables > Actions
    2.  Click New Repository Secret
    3.  Supply the Name `ACCESS_TOKEN` and provide the Token generated above as Secret
-3. Create a file called `config.json` with your [configuration options](#configuration-options) in the repository root. **Do NOT include the Access Token in your `config.json`!**
+3. Create a file called `config.json` with your [configuration options](#configuration-options) in the repository root. **Do NOT directly add your Access Token to your `config.json`!**
+
+> **Note**
+>
+> Remove the `"access-token": "Your access token",` line from the sample [configuration options](#configuration-options) when generating your own `config.json`
+
 4. Finally go to the Actions tab and enable the action. The action should now automatically run approximately once every 10 min. 
 
 > **Note**
